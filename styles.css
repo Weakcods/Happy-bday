@@ -42,10 +42,13 @@ body {
     }
 }
 
-.tap{
+.tap {
     text-align: center;
     color: white;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
 }
 
 .greetings > span {

@@ -7,3 +7,141 @@ body {
     justify-content: center;
     image-rendering: pixelated; /* This property sets the image rendering to pixelated */
 }
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #2d2c2c;
+    background-image: radial-gradient(rgba(145, 89, 89, 0.655) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+}
+
+.greetings {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 90px;
+    color: #f5d8d8;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.greetings > span {
+    display: inline-block;
+    animation: glow 2s ease-in-out infinite;
+}
+@keyframes glow {
+    0%, 100% {
+        color: #fff;
+        text-shadow: 0 0 12px rgb(255, 27, 240), 0 0 50px rgb(255, 27, 240), 0 0 100px rgb(255, 27, 240);
+    }
+    10%, 90% {
+        color: #f5d8d8;
+        text-shadow: none;
+    }
+}
+
+.tap{
+    text-align: center;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.greetings > span {
+    display: inline-block;
+    font-family: 'verdana', sans-serif;
+    animation: glow 1.5s ease-in-out infinite;
+}
+
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: none; /* Remove the previous animation */
+}
+
+    /* animation: confetti-fall 2s linear infinite;
+} */
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tap h2 {
+    animation: fade-in 15s ease-out forwards; /* Apply fade-in animation to h2 element */
+}
+
+
+
+.greetings > span:nth-child(1) { animation-delay: 0.2s; }
+.greetings > span:nth-child(2) { animation-delay: 0.4s; }
+.greetings > span:nth-child(3) { animation-delay: 0.6s; }
+.greetings > span:nth-child(4) { animation-delay: 0.8s; }
+.greetings > span:nth-child(5) { animation-delay: 1.0s; }
+.greetings > span:nth-child(6) { animation-delay: 1.2s; }
+.greetings > span:nth-child(7) { animation-delay: 1.4s; }
+.greetings > span:nth-child(8) { animation-delay: 1.6s; }
+.greetings > span:nth-child(9) { animation-delay: 1.8s; }
+.greetings > span:nth-child(10) { animation-delay: 2.0s; }
+.greetings > span:nth-child(11) { animation-delay: 2.2s; }
+.greetings > span:nth-child(12) { animation-delay: 2.4s; }
+.greetings > span:nth-child(13) { animation-delay: 2.6s; }
+.greetings > span:nth-child(14) { animation-delay: 2.8s; }
+
+
+.cake {
+    position: relative;
+    text-align: center;
+}
+
+.cake img {
+    max-width: 55%;
+    max-height: 55vh;
+    margin-top: 2%;
+    left: 37%;
+    position: center;
+    animation: pullUp 1s ease-in-out forwards; /* Apply pull-up animation */
+}
+
+@keyframes pullUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .greetings {
+        font-size: 2.5rem;
+        bottom: 40px;
+        position: center;
+
+    }
+
+    .cake img {
+        max-width: 80%; /* Adjusted max-width for smaller screens */
+        max-height: 80vh;
+        position: center;
+        bottom: 40px;
+    }
+}

@@ -1,6 +1,6 @@
 # Happy-bday
 - Prank your friend by this project.
-- Copy link and Lough
+- Copy link and Laugh
 
 ---
 
